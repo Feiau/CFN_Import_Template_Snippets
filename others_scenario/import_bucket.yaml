@@ -1,0 +1,26 @@
+Resources:
+  SSMRole:
+    Type: AWS::IAM::Role
+    Properties:
+      Description: Import
+      AssumeRolePolicyDocument:
+        Statement:
+          - Effect: Allow
+            Principal:
+              Service:
+                - ec2.amazonaws.com
+            Action:
+              - sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/AmazonSSMManagedInstanceCore
+
+  # ImportS3Bucket:
+  #   DeletionPolicy: Retain
+  #   Type: AWS::S3::Bucket
+  #   Properties:
+  #     BucketName: import-bucket-7
+  #     VersioningConfiguration:
+  #       Status: Enabled
+  #     Tags:
+  #       - Key: team
+  #         Value: deployment
