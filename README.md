@@ -54,7 +54,7 @@ Here are the recommended resources:
 
 ### Sample: Defining ScheduleExpression Property of AWS::Scheduler::Schedule
 - [Official documentation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-scheduler-schedule.html) ==> No example
-- [Github](https://github.com/Feiau/CFN_Stuck_In_Progress/tree/main)
+- [Github](https://github.com/)
   
   Search item: 
   ```
